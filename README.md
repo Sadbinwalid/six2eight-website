@@ -76,7 +76,7 @@ See [Development guide → Configuration](docs/DEVELOPMENT-GUIDE.md#configuratio
 ## Deployment
 
 Designed for [Vercel](https://vercel.com) (zero config) or any host that can run `next start`.
-Not yet deployed — see [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md).
+Live at **https://six2eight-website.vercel.app** — see [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md).
 
 ## Documentation
 
@@ -94,4 +94,4 @@ Not yet deployed — see [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md).
 
 ---
 
-Private project · © 2026 six2eight
+© 2026 six2eight

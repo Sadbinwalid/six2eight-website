@@ -1,6 +1,11 @@
 # Deployment
 
-**Current status:** not deployed. Local preview only (`npm run dev`).
+**Current status:** deployed to Vercel production at **https://six2eight-website.vercel.app**
+(project `six2eight-website`, account `sadbinwalid01-8361`, deployed with the Vercel CLI from `main`).
+
+Pushes to GitHub do **not** redeploy automatically yet: the Vercel account has no GitHub login
+connection. To enable auto-deploys, connect GitHub in Vercel → Account Settings → Authentication, then
+run `npx vercel git connect`. Until then, redeploy with `npx vercel deploy --prod` from `main`.
 
 The homepage prerenders to static HTML (`○ /` in the build output) and has no runtime environment
 variables, so it can be hosted anywhere that runs Next.js.
@@ -28,8 +33,10 @@ npx vercel          # preview
 npx vercel --prod   # production
 ```
 
-> A previous attempt created a local `.vercel/` folder (anonymous project). It is git-ignored; delete
-> it before linking the real Vercel project with `npx vercel link`.
+## Removing the deployment
+
+Vercel → project `six2eight-website` → Settings → scroll to **Delete Project** (or
+`npx vercel remove six2eight-website`). This takes the URL offline for everyone.
 
 ## Self-hosting
 
