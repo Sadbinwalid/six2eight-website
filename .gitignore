@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# raw Figma exports (large, regenerated from Figma; optimised copies live in public/figma)
+/assets/figma-source/
+
+# alternate build output dirs / tooling scratch
+/.next-*/
+/playwright-report/
+/test-results/

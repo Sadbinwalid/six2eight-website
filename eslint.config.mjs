@@ -5,6 +5,12 @@ import nextTs from "eslint-config-next/typescript";
 const eslintConfig = defineConfig([
   ...nextVitals,
   ...nextTs,
+  {
+    rules: {
+      // Figma assets are placed with exact pixel geometry; plain <img> is intentional.
+      "@next/next/no-img-element": "off",
+    },
+  },
   // Override default ignores of eslint-config-next.
   globalIgnores([
     // Default ignores of eslint-config-next:
@@ -12,6 +18,9 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Vercel CLI build output and raw design exports
+    ".vercel/**",
+    "assets/**",
   ]),
 ]);
 
