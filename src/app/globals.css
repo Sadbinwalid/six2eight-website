@@ -1,26 +1,58 @@
 @import "tailwindcss";
+@import "../styles/tokens.css";
+@import "../styles/typography.css";
+@import "../styles/effects.css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ------------------------------------------------------------------
+   Base
+------------------------------------------------------------------- */
+html {
+  background: var(--color-bg-primary);
+  font-variation-settings: "wdth" 100;
+  -webkit-text-size-adjust: 100%;
 }
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-bg-primary);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-variation-settings: "wdth" 100;
+  overflow-x: clip;
+  padding-bottom: var(--bottom-nav-h);
+}
+::selection {
+  background: var(--color-brand);
+  color: #000;
+}
+button {
+  cursor: pointer;
+}
+img {
+  -webkit-user-drag: none;
+}
+
+/* Keyboard focus — visible, on-brand, never on mouse click */
+:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+.on-light :focus-visible {
+  outline-color: #000;
+}
+
+/*
+ * Page container. Content is 1216px wide at the 1440 design size
+ * (80px frame gutter + 32px inner padding) and shrinks with the viewport.
+ */
+@utility container-page {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 16px;
+  @media (min-width: 768px) {
+    padding-inline: 32px;
+  }
+  @media (min-width: 1024px) {
+    max-width: 1440px;
+    padding-inline: max(32px, calc((100% - 1216px) / 2));
+  }
 }

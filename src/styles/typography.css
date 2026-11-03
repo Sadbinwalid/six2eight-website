@@ -1,0 +1,175 @@
+/* ------------------------------------------------------------------
+   Typography — Figma text styles (letter-spacing % → em).
+   Responsive styles are mobile-first: Mobile → (md) tablet → (lg) desktop,
+   using the Figma "Mobile - Heading/*" and "Desktop - Heading/*" values.
+------------------------------------------------------------------- */
+
+/* Heading 1 — hero */
+@utility t-display {
+  font-size: 38px;
+  line-height: 42px;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  @media (min-width: 768px) {
+    font-size: 56px;
+    line-height: 62px;
+    letter-spacing: -0.03em;
+  }
+  @media (min-width: 1024px) {
+    font-size: 72px;
+    line-height: 78px;
+  }
+}
+
+/* Heading 2 — section titles */
+@utility t-section {
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  @media (min-width: 768px) {
+    font-size: 44px;
+    line-height: 50px;
+  }
+  @media (min-width: 1024px) {
+    font-size: 56px;
+    line-height: 64px;
+  }
+}
+
+/* Heading 4 — card titles, FAQ questions (desktop) */
+@utility t-card-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  @media (min-width: 1024px) {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+/* Heading 5 — quotes, project names */
+@utility t-quote {
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  @media (min-width: 1024px) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+/* Fixed text styles */
+@utility t-h5 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}
+@utility t-xl-medium {
+  font-size: 20px;
+  line-height: normal;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}
+@utility t-xl-semibold {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+}
+@utility t-xl-regular {
+  font-size: 20px;
+  line-height: normal;
+  font-weight: 400;
+}
+@utility t-lg-regular {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+@utility t-lg-medium {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+@utility t-lg-semibold {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+}
+@utility t-md-regular {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+@utility t-md-medium {
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+@utility t-md-semibold {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+@utility t-sm-regular {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+@utility t-sm-medium {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+@utility t-sm-semibold {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+}
+@utility t-xs-regular {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+@utility t-xs-medium {
+  font-size: 12px;
+  line-height: normal;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}
+@utility t-cta-14 {
+  font-size: 14px;
+  line-height: normal;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+@utility t-cta-16 {
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+@utility t-cta-18 {
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}
+@utility t-eyebrow {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  @media (min-width: 1024px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

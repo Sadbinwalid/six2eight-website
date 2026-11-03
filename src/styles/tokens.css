@@ -1,0 +1,67 @@
+/* ------------------------------------------------------------------
+   Design tokens — mirrored 1:1 from the Figma variables
+   (six2eight · Website 2.0). Change values here, not in components.
+------------------------------------------------------------------- */
+@theme {
+  --font-sans: var(--font-instrument), "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), "IBM Plex Mono", ui-monospace, monospace;
+
+  /* Background */
+  --color-bg-primary: #f0eeed;
+  --color-bg-secondary: #ffffff;
+  --color-bg-tertiary: #000000;
+  --color-bg-subtle: #dcd8d5;
+  --color-bg-brand: #9afd0d;
+  --color-bg-yellow: #fef2cd;
+  --color-bg-green: #ebffcf;
+  --color-bg-red: #fbd3d0;
+  --color-bg-magenta: #ffeefa;
+  --color-avatar-01: #7373ff;
+  --color-avatar-02: #e789ff;
+
+  /* Content */
+  --color-brand: #9afd0d;
+  --color-ink: #000000;
+  --color-ink-80: rgb(0 0 0 / 0.8);
+  --color-ink-60: rgb(0 0 0 / 0.6);
+  --color-ink-50: rgb(0 0 0 / 0.5);
+  --color-ink-20: rgb(0 0 0 / 0.2);
+  --color-ink-10: rgb(0 0 0 / 0.1);
+  --color-paper: #ffffff;
+  --color-paper-80: rgb(255 255 255 / 0.8);
+  --color-paper-30: rgb(255 255 255 / 0.3);
+  --color-paper-20: rgb(255 255 255 / 0.2);
+  --color-paper-10: rgb(255 255 255 / 0.1);
+  --color-paper-5: rgb(255 255 255 / 0.05);
+  --color-link-blue: #2c66ff;
+  --color-required: #ff3d2e;
+  --color-cta-ink: #121d02;
+
+  /* Radius */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+
+  /* Motion — one shared vocabulary for CSS transitions (GSAP mirrors these in lib/motion.ts) */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-in-out-quart: cubic-bezier(0.76, 0, 0.24, 1);
+
+  --animate-marquee-left: marquee-left var(--marquee-duration, 40s) linear infinite;
+  --animate-marquee-right: marquee-right var(--marquee-duration, 40s) linear infinite;
+}
+
+:root {
+  /* Height of the sticky desktop header / mobile top bar */
+  --header-h: 56px;
+  /* Height reserved for the mobile bottom navigation */
+  --bottom-nav-h: 72px;
+}
+@media (min-width: 1024px) {
+  :root {
+    --header-h: 96px;
+    --bottom-nav-h: 0px;
+  }
+}
