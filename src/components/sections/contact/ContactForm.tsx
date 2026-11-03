@@ -90,7 +90,7 @@ export function ContactForm() {
       data-cta="form"
       noValidate
       onSubmit={onSubmit}
-      className="relative flex w-full flex-col items-start gap-5 overflow-hidden rounded-[16px] bg-bg-secondary p-4 md:p-8 lg:gap-6 xl:w-[626px] xl:shrink-0 xl:p-10"
+      className="relative flex w-full flex-col items-start gap-5 overflow-hidden rounded-[16px] bg-bg-secondary p-4 md:p-8 lg:gap-6 xl:w-[min(720px,51.5%)] xl:shrink-0 xl:p-10"
     >
       <div className="flex w-full flex-col items-start gap-5 lg:gap-6">
         <div className="flex w-full flex-col items-start gap-2 lg:gap-3">

@@ -66,7 +66,7 @@ function TimeSlots({ slot, onPick }: { slot: string | null; onPick: (t: string) 
   return (
     <ul className="grid grid-cols-2 gap-3 md:grid-cols-3 xl:flex xl:flex-col">
       {SLOTS.map((t) => (
-        <li key={t} className="xl:w-[201px]">
+        <li key={t} className="xl:w-[clamp(201px,14vw,280px)]">
           {slot === t ? (
             <div className="flex gap-1.5 [animation:fade-up_0.4s_var(--ease-out-expo)]">
               <span className="t-md-medium flex flex-1 items-center justify-center rounded-[6px] bg-[#5c5c5c] p-3 text-white">{t}</span>
@@ -127,11 +127,11 @@ export function CalendarWidget() {
 
   return (
     <div data-bk="widget" className="flex w-full flex-col rounded-[16px] bg-bg-secondary xl:w-auto xl:flex-row xl:items-start">
-      <div className="flex w-full flex-col items-start gap-5 p-4 md:p-7 xl:w-[400px] xl:gap-10">
+      <div className="flex w-full flex-col items-start gap-5 p-4 md:p-7 xl:w-[clamp(400px,28vw,520px)] xl:gap-10">
         <div className="flex w-full flex-col items-start gap-5 xl:gap-10">
           <p className="t-lg-semibold text-black">Select a Date &amp; Time</p>
           <div className="flex w-full flex-col items-center gap-4 xl:gap-6">
-            <div className="flex w-full max-w-[343.14px] items-center justify-between">
+            <div className="flex w-full max-w-[343.14px] items-center justify-between xl:max-w-none">
               <button
                 type="button"
                 aria-label="Previous month"
@@ -152,7 +152,7 @@ export function CalendarWidget() {
                 <img src="/figma/cal-next.svg" alt="" className="block size-full" />
               </button>
             </div>
-            <div className="flex w-full max-w-[343.14px] items-start justify-between xl:justify-start xl:gap-[5.985px]">
+            <div className="flex w-full max-w-[343.14px] items-start justify-between xl:max-w-none">
               {cols.map((col, ci) => (
                 <div key={WEEKDAYS[ci]} className="flex flex-col items-center gap-[15.96px]">
                   <p className="t-xs-regular text-black">{WEEKDAYS[ci]}</p>

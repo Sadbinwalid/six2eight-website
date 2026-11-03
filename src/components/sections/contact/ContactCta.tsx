@@ -18,7 +18,7 @@ export default function ContactCta() {
 
   return (
     <section ref={ref} id="contact" aria-labelledby="contact-title" className="bg-bg-subtle py-14 lg:py-32">
-      <div className="container-page flex flex-col gap-8 xl:flex-row xl:items-center xl:gap-20">
+      <div className="container-page flex flex-col gap-8 xl:flex-row xl:items-center xl:justify-between xl:gap-20">
         <div className="flex w-full flex-col items-start gap-8 xl:w-[510px] xl:shrink-0 xl:gap-[309px]">
           <div className="flex w-full flex-col items-start gap-4 lg:gap-6 xl:w-[477px]">
             <RevealText

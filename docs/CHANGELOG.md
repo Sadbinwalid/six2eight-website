@@ -2,6 +2,15 @@
 
 All notable changes. Format based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.1.1] — 2026-11-04
+
+### Changed
+
+- Desktop page container is now fluid (gutter `clamp(32px, 4.5vw, 96px)`, content capped at 1600 px)
+  instead of a fixed 1216 px column. Fixes the narrow, over-padded layout on 14-inch laptops
+  (1512 px: 1144 → 1376 px content) and wide screens (1920 px: 736 → 1600 px).
+- Contact form, booking calendar and footer scale with the wider container.
+
 ## [0.1.0] — 2026-11-04
 
 ### Added

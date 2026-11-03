@@ -1,6 +1,6 @@
 # QA Checklist
 
-Run at **393, 768, 1024 and 1440 px** (plus a real phone where possible). Last full pass: 2026-11-04,
+Run at **360, 393, 768, 1024, 1280, 1366, 1440, 1512 (14" MacBook) and 1920 px** (plus a real phone where possible). Last full pass: 2026-11-04,
 Chrome (desktop + mobile emulation). Results noted per item.
 
 ## Automated gates

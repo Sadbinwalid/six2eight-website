@@ -41,18 +41,22 @@ img {
 }
 
 /*
- * Page container. Content is 1216px wide at the 1440 design size
- * (80px frame gutter + 32px inner padding) and shrinks with the viewport.
+ * Page container — the single source of horizontal rhythm.
+ *
+ * Mobile 16px and tablet 32px gutters come from the Figma mobile frames. On
+ * desktop the gutter is fluid (4.5vw, 32–96px) so laptops use their width
+ * instead of the fixed 112px margins of the 1440 artboard, and the content
+ * column stops growing at 1600px on very wide screens. Percentages here
+ * resolve against the full-width parent, so the element itself must not have
+ * a max-width.
  */
 @utility container-page {
   width: 100%;
-  margin-inline: auto;
   padding-inline: 16px;
   @media (min-width: 768px) {
     padding-inline: 32px;
   }
   @media (min-width: 1024px) {
-    max-width: 1440px;
-    padding-inline: max(32px, calc((100% - 1216px) / 2));
+    padding-inline: max(clamp(32px, 4.5vw, 96px), calc((100% - 1600px) / 2));
   }
 }

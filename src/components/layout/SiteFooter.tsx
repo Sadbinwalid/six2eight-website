@@ -203,7 +203,7 @@ export default function SiteFooter() {
       {/* giant wordmark */}
       <div
         data-ft="wordmark-wrap"
-        className="relative mx-auto mt-10 grid w-full max-w-[1440px] overflow-hidden lg:mt-6"
+        className="relative mx-auto mt-10 grid w-full max-w-[1920px] overflow-hidden lg:mt-6"
         style={{ aspectRatio: "1440/241" }}
       >
         <img

@@ -46,8 +46,11 @@ Families: **Instrument Sans** (variable, `wdth 100`) for everything; **IBM Plex 
 
 - Figma spacing scale (`spacing-xs` 4 … `spacing-11xl` 128) is used through Tailwind's 4 px scale
   (`gap-3` = 12, `py-32` = 128 …).
-- **`container-page`** — 16 px gutters (mobile), 32 px (tablet), and on desktop a centred 1216 px
-  content column inside a 1440 px frame (`padding-inline: max(32px, (100% - 1216px) / 2)`).
+- **`container-page`** — 16 px gutters (mobile), 32 px (tablet), and on desktop a fluid gutter of
+  `clamp(32px, 4.5vw, 96px)`; the content column caps at 1600 px on very wide screens
+  (`padding-inline: max(clamp(32px, 4.5vw, 96px), (100% - 1600px) / 2)`). The Figma 1440 artboard
+  uses fixed 112 px margins; those are deliberately not reproduced so laptops (1280–1512 px) use
+  their width. Resulting content width: 1165 px @ 1280, 1310 px @ 1440, 1376 px @ 1512, 1600 px @ 1920.
 - Section rhythm: desktop `py-32` (128), mobile `py-14` (56) — per Figma.
 
 ## Breakpoints
