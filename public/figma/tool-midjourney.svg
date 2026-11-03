@@ -1,0 +1,13 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="29" height="24" viewBox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Logos" clip-path="url(#clip0_0_9)">
+<path id="waves" d="M0.378906 23.6334C1.20931 23.6334 2.45492 21.9029 3.90813 21.6557C4.73853 21.6557 5.36134 23.3862 7.43735 23.6334C8.89056 23.6334 9.51336 21.9029 10.9666 21.9029C12.4198 21.9029 13.0426 23.6334 14.4958 23.6334C15.949 23.6334 16.5718 21.9029 18.025 21.9029C19.4782 21.9029 20.101 23.6334 21.5542 23.6334C23.0074 23.6334 23.6302 21.9029 25.0835 21.9029C26.5367 21.9029 27.1595 23.6334 28.6127 23.6334" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" stroke="black"/>
+<path id="hull" d="M3.22035 21.9108L2.26953 20.1062L26.7665 18.5405C24.8399 20.2792 22.3653 21.6883 19.8617 22.842" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" stroke="black"/>
+<path id="front_sail" d="M12.0195 3.29578C16.1882 4.56067 22.0176 10.6709 24.0023 17.2384C22.9144 16.8141 22.1006 16.3814 20.5727 16.7687C19.0946 11.4331 16.4497 6.33646 12.0195 3.29578Z" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" stroke="black"/>
+<path id="rear_sail" d="M4.26762 0.374695C9.60712 2.64079 16.9313 8.94877 18.2766 17.3498C12.1191 14.8859 7.43146 16.2003 4.16797 18.1986C9.14625 11.9194 6.91246 4.77916 4.26762 0.374695Z" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" stroke="black"/>
+</g>
+<defs>
+<clipPath id="clip0_0_9">
+<rect width="29" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
